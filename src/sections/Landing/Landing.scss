@@ -18,7 +18,7 @@
 
     row-gap: 15px;
     @include tablet {
-      max-width: 44vw;
+      max-width: 50vw;
     }
 
     @include phone {
@@ -53,25 +53,25 @@
     }
   }
   &-logo-text {
-    .mlh-mobile {
-      display: none;
+    display: flex;
+    gap: 20px;
+    
+    img {
+      height: 60px;
     }
-
+    @include tablet {
+      img {
+        height: 40px;
+      }
+    }
     @include phone {
-      .mlh-mobile {
-        display: block;
+      .landing-logo {
+        display: none;
       }
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-
-      .landing-title {
-        font-size: $text-large;
-        font-weight: 600;
+      img {
+        height: 35px;
       }
-    }
+    } 
   }
 
   &-description {

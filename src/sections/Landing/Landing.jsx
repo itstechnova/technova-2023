@@ -1,8 +1,9 @@
 import "./Landing.scss";
 import SectionWrapper from "../../components/SectionWrapper/SectionWrapper";
 import landing from "../../resources/strings/landing";
-// import Button from "../../components/Button/Button";
+import landingBanner from "../../resources/images/logo/technova_banner.png";
 import LandingButton from "./LandingButton";
+import tnLogo from "../../resources/images/logo/logo.png";
 // import asterisk1 from "../../resources/images/graphics/asterisk-1.svg";
 // import asterisk2 from "../../resources/images/graphics/asterisk-2.svg";
 import asterisk3 from "../../resources/images/graphics/asterisk-3.svg";
@@ -22,7 +23,9 @@ const Landing = () => {
           <img id="ms-goose" src={msGooseFlowers} alt="ms goose" />
           <div className="landing-text">
             <h4 className="landing-logo-text">
-              <span className="landing-title">{landing.title1}</span>
+              <img src={tnLogo} className="landing-logo" alt="Tech Nova Logo" />
+              <img src={landingBanner} className="landing-banner" alt="TechNova" />
+              {/* <span className="landing-title">{landing.title1}</span> */}
             </h4>
             <h4 className="landing-description">{landing.description}</h4>
             <h4 className="landing-dates">{landing.dates}</h4>
